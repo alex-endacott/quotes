@@ -1,5 +1,5 @@
-random-quotes: main.o api.o simpsons.o
-	g++ main.o api.o simpsons.o -std=c++11 -lboost_system -lpthread -o bin/random-quotes && rm -f *.o
+quotes: main.o api.o simpsons.o
+	g++ main.o api.o simpsons.o -std=c++11 -lboost_system -lpthread -o bin/quotes && rm -f *.o
 
 main.o: main.cpp include/api.hpp
 	g++ -c main.cpp -std=c++11
